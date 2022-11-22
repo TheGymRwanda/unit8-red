@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      md: "24.375rem",
+      lg: "52.125rem",
+    },
     extend: {},
   },
   plugins: [],
-}
+};
