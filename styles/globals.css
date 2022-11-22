@@ -1,3 +1,8 @@
+@import "../public/assets/fonts/index.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  font-family: "Neufile Grotesk";
+}
