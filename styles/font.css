@@ -1,0 +1,5 @@
+/* font family of the whole project */
+@font-face {
+  font-family: "Neufile Grotesk";
+  src: url("../public/assets/fonts/NeufileGrotesk-Regular.woff2");
+}
