@@ -13,12 +13,19 @@ module.exports = {
       fontFamily: {
         sans: ["Neufile Grotesk"] // called it sans for it to act as default
       },
+      spacing:{
+        0.6:"0.1875rem" // this is 3px
+      },
+      borderRadius:{
+        md:"1.1875rem"// this is 19px for border radius
+      },
       colors: {
         purple: '#5602E0', //this is Purple
         'grey': {
           DEFAULT: '#9A9A9A', //this is dark grey
           50: '#E4E4E4', //this is light grey
-          100: '#878787' //this is  grey for the tags
+          100: '#878787', //this is  grey for the tags
+          200:'#F4F4F4'   // this is tag background color
         }
       },
       lineHeight: {

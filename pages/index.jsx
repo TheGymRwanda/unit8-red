@@ -1,3 +1,4 @@
+import Tag from "../components/ui/Tag";
 import Wrapper from "../components/layout/Wrapper";
 import Anchor from "../components/ui/Anchor";
 
@@ -9,6 +10,10 @@ export default function Home() {
         <span className="text-red-500"> RED!</span> coming soon
       </h1>
       <Anchor href='https://www.youtube.com/' >Contact us</Anchor>
+       <div className="w-fit m-auto">
+        <Tag>02 Oct 2022</Tag>
+        <Tag fill>DAOs</Tag>
+      </div>
     </Wrapper>
   );
 }
