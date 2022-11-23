@@ -3,15 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer components {
   h1 {
-    @apply text-6xl leading-tight tracking-wider md:text-7xl md:leading-tighter md:tracking-wider;
+    @apply text-6xl leading-tight tracking-wider md:text-7xl md:leading-tighter;
   }
   h2 {
-    @apply text-3xl leading-normal tracking-tight md:text-4xl md:leading-snug md:tracking-tight;
+    @apply text-3xl leading-normal tracking-tight md:text-4xl md:leading-snug;
   }
   h3 {
-    @apply text-2xl leading-relaxed tracking-wide md:leading-7 text-grey;
+    @apply text-2xl leading-relaxed tracking-wide md:leading-snug text-grey;
   }
   p {
     @apply text-xl leading-loose tracking-normal md:text-2xl md:leading-relaxed md:tracking-wide;
