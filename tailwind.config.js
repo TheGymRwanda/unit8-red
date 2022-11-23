@@ -20,6 +20,9 @@ module.exports = {
           50:'#E4E4E4', //this is light grey
           100:'#878787' //this is  grey for the tags
         }
+      },
+      maxWidth: {
+        "8xl": "82rem"
       }
     },
   },
