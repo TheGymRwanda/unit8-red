@@ -1,15 +1,19 @@
 import Tag from "../components/ui/Tag";
+import Wrapper from "../components/layout/Wrapper";
+import Anchor from "../components/ui/Anchor";
+
 
 export default function Home() {
   return (
-    <>
-      <h1 className="text-4xl  text-center">
+    <Wrapper>
+      <h1 className="text-4xl  text-center bg-green-200">
         <span className="text-red-500"> RED!</span> coming soon
       </h1>
-      <div className="w-fit m-auto">
+      <Anchor href='https://www.youtube.com/' >Contact us</Anchor>
+       <div className="w-fit m-auto">
         <Tag>02 Oct 2022</Tag>
         <Tag fill>DAOs</Tag>
       </div>
-    </>
+    </Wrapper>
   );
 }
