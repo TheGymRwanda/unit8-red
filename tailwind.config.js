@@ -35,8 +35,12 @@ module.exports = {
         normal:'-0.0125em', //-1.25%
         wide:'-0.015em', //-1.5%
         wider:'-0.02em' //-2%
+      },
+      maxWidth: {
+        "8xl": "82rem"
       }
-    },
+    }
   },
   plugins: [],
 };
+
