@@ -5,11 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    screens: {
-      md: "24.375rem",
-      lg: "52.125rem",
-    },
+
     extend: {
+      screens: {
+        sm: "24.375rem",
+        md: "52.125rem",
+      },
       fontFamily: {
         sans: ["Neufile Grotesk"], // called it sans for it to act as default
       },
