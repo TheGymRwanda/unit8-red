@@ -5,15 +5,15 @@
 
 @layer components {
   h1 {
-    @apply text-6xl leading-tight tracking-wider sm:text-7xl sm:leading-tighter;
+    @apply text-6xl leading-tight tracking-wider md:text-7xl md:leading-tighter;
   }
   h2 {
-    @apply text-3xl leading-normal tracking-tight sm:text-4xl sm:leading-snug;
+    @apply text-3xl leading-normal tracking-tight md:text-4xl md:leading-snug;
   }
   h3 {
-    @apply text-2xl leading-relaxed tracking-wide sm:leading-snug text-grey;
+    @apply text-2xl leading-relaxed tracking-wide md:leading-snug text-grey;
   }
   p {
-    @apply text-xl leading-loose tracking-normal sm:text-2xl sm:leading-relaxed sm:tracking-wide;
+    @apply text-xl leading-loose tracking-normal md:text-2xl md:leading-relaxed md:tracking-wide;
   }
 }
