@@ -16,6 +16,12 @@ module.exports = {
       },
       spacing: {
         0.6: "0.1875rem", // this is 3px
+        2.75: "0.6875rem", // 11px
+        3.5: "0.875rem", // 14px
+        111: "27.75rem", // 444px
+      },
+      height: {
+        111: "27.75rem", // 444px
       },
       borderRadius: {
         md: "1.1875rem", // this is 19px for border radius
@@ -52,6 +58,24 @@ module.exports = {
         "7xl": "4rem", // this is the size of 64px
         "3xl": "1.75rem", // this is the size of 28px
       },
+      dropShadow: {
+        "sm": "1px 1px 14px rgba(0, 0, 0, 0.1)"
+      },
+      keyframes: {
+        "show": {
+          '0%': { opacity: 0},
+          "100%": {opacity: 1},
+        },
+        "unshow": {
+          "0%": {opacity: 1},
+          '100%': { opacity: 0},
+          
+        }
+      },
+      animation: {
+        'show': "show 300ms ease-out both",
+        'unshow': "unshow 300ms ease-out both"
+      }
     },
   },
   plugins: [],
