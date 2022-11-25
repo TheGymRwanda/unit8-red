@@ -19,6 +19,10 @@ module.exports = {
         2.75: "0.6875rem", // 11px
         3.5: "0.875rem", // 14px
         111: "27.75rem", // 444px
+        17.76: "4.4425rem", //71.08px
+        10.25: "2.5625rem", //41px
+        10.75: "2.6875rem", // 43px
+        7.5: "1.875rem", //30px
         17.25: "8.625rem", // this is 138px
         31.75: "7.9375rem", // this is 127px
         33.75: "8.4375rem", // this is 135px
@@ -42,6 +46,9 @@ module.exports = {
       },
       height: {
         111: "27.75rem", // 444px
+      },
+      borderWidth: {
+        1.5: "0.0938rem", //1.5px
       },
       borderRadius: {
         md: "1.1875rem", // this is 19px for border radius
