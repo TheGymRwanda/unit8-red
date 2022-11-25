@@ -8,20 +8,27 @@ export default function Projects() {
   const [show, setShow] = useState();
   const handleHover = (value) => {
     return function (event) {
-            setShow(value);
- 
+      setShow(value);
     };
   };
   const handleMouseOut = async () => {
-        setShow(null);
+    setShow(null);
   };
-  const cards = data.map(el => <ProjectCard src={el.src} key={el.id} text={el.text} id={el.id} show={show} />)
+  const cards = data.map((el) => (
+    <ProjectCard
+      src={el.src}
+      key={el.id}
+      text={el.text}
+      id={el.id}
+      show={show}
+    />
+  ));
   return (
     <Wrapper>
       <h3 className="mb-2.75 pl-1">Projects</h3>
       <div className="flex justify-between">
         <div className="flex flex-col gap-2">
-        <ProjectTitle
+          <ProjectTitle
             handle={handleHover(1)}
             remove={handleMouseOut}
             show={show}
