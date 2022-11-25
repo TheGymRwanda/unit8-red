@@ -3,6 +3,7 @@ import ProjectTitle from "../../ui/ProjectTitle";
 import Wrapper from "../../layout/Wrapper";
 import ProjectCard from "../../ui/ProjectCard";
 import data from "../../../data/projectCard";
+import Link from "next/link";
 
 export default function Projects() {
   const [show, setShow] = useState();
@@ -29,17 +30,20 @@ export default function Projects() {
         handle={handleHover(el.id)}
         remove={handleMouseOut}
         show={show}
-        href="/"
+        mobile
       >
         {el.name}
       </ProjectTitle>
-      <ProjectCard
+      <Link href={el.link}>
+        <ProjectCard
         src={el.src}
         key={el.id}
         text={el.text}
         id={el.id}
         show={show}
       />
+      </Link>
+      
     </>
   ));
   return (
