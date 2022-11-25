@@ -16,15 +16,9 @@ module.exports = {
       },
       spacing: {
         0.6: "0.1875rem", // this is 3px
-        4.5: "1.125rem",
-        6.75: "1.6875rem", // this is 27px
-        25.25: "6.3125rem", // 101px
-        5.3: "1.3256rem", //21.21px
-        4.48: "1.1213rem", //17.94px
-        8.25: "2.0625rem", // 33px
-        16.69: "4.1744rem", //66px
-        26: "6.5rem", //104px
-        34: "8.5rem", //136px
+        2.75: "0.6875rem", // 11px
+        3.5: "0.875rem", // 14px
+        111: "27.75rem", // 444px
         17.76: "4.4425rem", //71.08px
         10.25: "2.5625rem", //41px
         10.75: "2.6875rem", // 43px
@@ -49,6 +43,9 @@ module.exports = {
         33: "8.25rem", //132px
         22.45: "5.6125rem", //89.8px
         35.55: "8.8875rem", //142.2px
+      },
+      height: {
+        111: "27.75rem", // 444px
       },
       borderWidth: {
         1.5: "0.0938rem", //1.5px
@@ -95,6 +92,24 @@ module.exports = {
         "7xl": "4rem", // this is the size of 64px
         "3xl": "1.75rem", // this is the size of 28px
       },
+      dropShadow: {
+        "sm": "1px 1px 14px rgba(0, 0, 0, 0.1)"
+      },
+      keyframes: {
+        "show": {
+          '0%': { opacity: 0},
+          "100%": {opacity: 1},
+        },
+        "unshow": {
+          "0%": {opacity: 1},
+          '100%': { opacity: 0},
+          
+        }
+      },
+      animation: {
+        'show': "show 300ms ease-out both",
+        'unshow': "unshow 300ms ease-out both"
+      }
     },
   },
   plugins: [],
