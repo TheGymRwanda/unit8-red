@@ -1,14 +1,39 @@
+import { useState } from "react";
 import Wrapper from "../../layout/Wrapper";
 import Anchor from "../../ui/Anchor";
 
 export default function About() {
+  const [tabValue, setTabValue] = useState(1);
+  // this function used in onclick event to set color to purple on the tab
+  function activeStyle(key) {
+    return tabValue === key + 1 ? "text-purple" : "cursor-pointer";
+  }
+  // this function used to set undeline line on all tabs
+  function undelineStyle() {
+    let defaultStyle =
+      "transition-all ease-in-out duration-300 pt-2 absolute border-b-1.5  bottom-0 border-purple ";
+    return tabValue === 1
+      ? `${defaultStyle} w-24 left-0`
+      : tabValue === 2
+      ? `${defaultStyle} w-32.25 md:left-17.25 xl:left-34`
+      : `${defaultStyle}  md:w-16 xl:w-16.25 md:left-78 xl:left-76.5`;
+  }
   return (
     <Wrapper>
-      <div className="mb-17.76 xl:max-w-4xl lg:max-w-3xl ml-auto">
-        <div className="flex md:gap-10.75 lg:gap-10.25 xl:gap-10 pb-5">
-          <h3 className=" text-purple border-b-1.5  border-purple">About us</h3>
-          <h3>What We do</h3>
-          <h3>Hiring</h3>
+      <div className="mb-17.76  xl:max-w-4xl lg:max-w-3xl ml-auto">
+        <div className="flex  md:gap-10.75 lg:gap-10.25 w-fit xl:gap-10 mb-5 relative">
+          {["About us", "What We do", "Hiring"].map((v, k) => {
+            return (
+              <h3
+                key={k}
+                onClick={() => setTabValue(k + 1)}
+                className={activeStyle(k)}
+              >
+                {v}
+              </h3>
+            );
+          })}
+          <span className={undelineStyle()}></span>
         </div>
         <p>
           Blockchain will do for cooperation what the internet did for
