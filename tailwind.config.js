@@ -16,6 +16,19 @@ module.exports = {
       },
       spacing: {
         0.6: "0.1875rem", // this is 3px
+        4.5: "1.125rem",
+        6.75: "1.6875rem", // this is 27px
+        25.25: "6.3125rem", // 101px
+        5.3: "1.3256rem", //21.21px
+        4.48: "1.1213rem", //17.94px
+        8.25: "2.0625rem", // 33px
+        16.69: "4.1744rem", //66px
+        26: "6.5rem", //104px
+        34: "8.5rem", //136px
+        17.76: "4.4425rem", //71.08px
+        10.25: "2.5625rem", //41px
+        10.75: "2.6875rem", // 43px
+        7.5: "1.875rem", //30px
         17.25: "8.625rem", // this is 138px
         31.75: "7.9375rem", // this is 127px
         33.75: "8.4375rem", // this is 135px
@@ -36,6 +49,9 @@ module.exports = {
         33: "8.25rem", //132px
         22.45: "5.6125rem", //89.8px
         35.55: "8.8875rem", //142.2px
+      },
+      borderWidth: {
+        1.5: "0.0938rem", //1.5px
       },
       borderRadius: {
         md: "1.1875rem", // this is 19px for border radius
