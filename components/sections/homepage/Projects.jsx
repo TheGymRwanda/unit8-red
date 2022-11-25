@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import ProjectTitle from "../../layout/ProjectTitle";
+import ProjectTitle from "../../ui/ProjectTitle";
 import Wrapper from "../../layout/Wrapper";
 import ProjectCard from "../../ui/ProjectCard";
 import data from "../../../data/projectCard";
@@ -27,7 +27,7 @@ export default function Projects() {
     <Wrapper>
       <h3 className="mb-2.75 pl-1">Projects</h3>
       <div className="flex justify-between">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 items-start">
           <ProjectTitle
             handle={handleHover(1)}
             remove={handleMouseOut}
