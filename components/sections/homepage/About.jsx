@@ -36,7 +36,7 @@ export default function About() {
           <span className={undelineStyle()}></span>
         </div>
         {tabValue === 1 ? (
-          <div>
+          <div className="min-h-103.5">
             <p>
               Blockchain will do for cooperation what the internet did for
               communication - We believe that blockchain technology has the
@@ -60,7 +60,7 @@ export default function About() {
             </p>
           </div>
         ) : tabValue === 2 ? (
-          <p>
+          <p className="min-h-103.5">
             Work Meaningful - With our work, we aim to impact society
             positively. The projects we get involved with the aim to solve
             significant problems in our society, sustainably and in the long
@@ -68,7 +68,7 @@ export default function About() {
             encouraging harmful behavior.
           </p>
         ) : (
-          <p>
+          <p className="min-h-103.5">
             We are always looking for new talent. Find out{" "}
             <Anchor href="https://medium.com/@moritzfelipe/blockchain-the-internet-for-cooperation-37a606bb3c0">
               more

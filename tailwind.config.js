@@ -48,6 +48,9 @@ module.exports = {
         78: "19.5rem", //312px
         76.5: "19.125rem", //306px
       },
+      minHeight: {
+        103.5: "25.875rem", // 414px
+      },
       height: {
         111: "27.75rem", // 444px
       },
@@ -97,23 +100,22 @@ module.exports = {
         "3xl": "1.75rem", // this is the size of 28px
       },
       dropShadow: {
-        "sm": "1px 1px 14px rgba(0, 0, 0, 0.1)"
+        sm: "1px 1px 14px rgba(0, 0, 0, 0.1)",
       },
       keyframes: {
-        "show": {
-          '0%': { opacity: 0},
-          "100%": {opacity: 1},
+        show: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
         },
-        "unshow": {
-          "0%": {opacity: 1},
-          '100%': { opacity: 0},
-          
-        }
+        unshow: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
       },
       animation: {
-        'show': "show 300ms ease-out both",
-        'unshow': "unshow 300ms ease-out both"
-      }
+        show: "show 300ms ease-out both",
+        unshow: "unshow 300ms ease-out both",
+      },
     },
   },
   plugins: [],
