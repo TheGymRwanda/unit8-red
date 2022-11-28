@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer";
 import Hero from "../components/sections/homepage/Hero";
 import Blog from "../components/sections/homepage/Blog";
 
+
 export default function Home() {
   return (
     <main>
