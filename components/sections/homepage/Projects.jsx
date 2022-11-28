@@ -36,14 +36,13 @@ export default function Projects() {
       </ProjectTitle>
       <Link href={el.link}>
         <ProjectCard
-        src={el.src}
-        key={el.id}
-        text={el.text}
-        id={el.id}
-        show={show}
-      />
+          src={el.src}
+          key={el.id}
+          text={el.text}
+          id={el.id}
+          show={show}
+        />
       </Link>
-      
     </>
   ));
   return (
@@ -111,7 +110,6 @@ export default function Projects() {
         <div className="flex flex-col gap-2 items-start w-full">
           {mobileCards}
         </div>
-        {/* <div className="min-w-[811px] relative">{cards}</div> */}
       </div>
     </Wrapper>
   );
