@@ -69,7 +69,7 @@ export default function About() {
           </p>
         ) : (
           <p>
-            We are always looking for new talent. Find out 
+            We are always looking for new talent. Find out{" "}
             <Anchor href="https://medium.com/@moritzfelipe/blockchain-the-internet-for-cooperation-37a606bb3c0">
               more
             </Anchor>
