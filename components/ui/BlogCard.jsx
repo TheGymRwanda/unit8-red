@@ -15,7 +15,7 @@ export default function BlogCard({date, title, subtitle,tags}) {
       </div>
        
       <div className='flex flex-wrap gap-x-6 gap-y-2 items-center'>
-        {tags.map(el=><Tag fill>{el.name}</Tag>)}
+        {tags.map(el=><Tag key={el.id} fill>{el.name}</Tag>)}
        
       
 
