@@ -35,26 +35,46 @@ export default function About() {
           })}
           <span className={undelineStyle()}></span>
         </div>
-        <p>
-          Blockchain will do for cooperation what the internet did for
-          communication - We believe that blockchain technology has the
-          potential to shift financial models as we know them, creating revenue
-          streams that are more sustainable and fair for users. We envision a
-          future in which financial infrastructures are rather decentralised and
-          horizontal, in which any member can have a say. Through its
-          immutability, blockchain technology provides trustworthy
-          infrastructures that allow cooperation on a large scale.
-          <Anchor href="https://medium.com/@moritzfelipe/blockchain-the-internet-for-cooperation-37a606bb3c0">
-            Learn more
-          </Anchor>
-        </p>
-        <p className=" md:pt-7.5 lg:pt-7 ">
-          Work Meaningful - With our work, we aim to impact society positively.
-          The projects we get involved with the aim to solve significant
-          problems in our society, sustainably and in the long run, rather than
-          looking for a quick profit through speculation or encouraging harmful
-          behavior.
-        </p>
+        {tabValue === 1 ? (
+          <div className="min-h-103.5">
+            <p>
+              Blockchain will do for cooperation what the internet did for
+              communication - We believe that blockchain technology has the
+              potential to shift financial models as we know them, creating
+              revenue streams that are more sustainable and fair for users. We
+              envision a future in which financial infrastructures are rather
+              decentralised and horizontal, in which any member can have a say.
+              Through its immutability, blockchain technology provides
+              trustworthy infrastructures that allow cooperation on a large
+              scale.
+              <Anchor href="https://medium.com/@moritzfelipe/blockchain-the-internet-for-cooperation-37a606bb3c0">
+                Learn more
+              </Anchor>
+            </p>
+            <p className="md:pt-7.5 lg:pt-7">
+              Work Meaningful - With our work, we aim to impact society
+              positively. The projects we get involved with the aim to solve
+              significant problems in our society, sustainably and in the long
+              run, rather than looking for a quick profit through speculation or
+              encouraging harmful behavior.
+            </p>
+          </div>
+        ) : tabValue === 2 ? (
+          <p className="min-h-103.5">
+            Work Meaningful - With our work, we aim to impact society
+            positively. The projects we get involved with the aim to solve
+            significant problems in our society, sustainably and in the long
+            run, rather than looking for a quick profit through speculation or
+            encouraging harmful behavior.
+          </p>
+        ) : (
+          <p className="min-h-103.5">
+            We are always looking for new talent. Find out{" "}
+            <Anchor href="https://medium.com/@moritzfelipe/blockchain-the-internet-for-cooperation-37a606bb3c0">
+              more
+            </Anchor>
+          </p>
+        )}
       </div>
     </Wrapper>
   );
