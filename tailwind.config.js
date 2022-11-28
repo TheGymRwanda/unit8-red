@@ -51,22 +51,27 @@ module.exports = {
         76.5: "19.125rem", //306px
         2.16: "0.5406rem", // 8.65px
         4.25: "1.0625rem", // 17px
-        "27.79": "6.9481rem", // 111.17px
-        75.5:"18.875rem" , //302px
+        27.79: "6.9481rem", // 111.17px
+        75.5: "18.875rem", //302px
         112: "28rem", //448px
-        119.25: "29.8125rem" //477px
+        119.25: "29.8125rem", //477px
+        4.75: "1.1875rem", //19px
+        5.5: "1.375rem", //22px
+        14.21: "3.5537rem", //56.86px
+      },
+      minHeight: {
+        103.5: "25.875rem", // 414px
       },
       height: {
         111: "27.75rem", // 444px
       },
       borderWidth: {
         1.5: "0.0938rem", //0.0938rem
-        0.25: "0.0625rem" //1px
+        0.25: "0.0625rem", //1px
       },
       borderRadius: {
         md: "1.1875rem", // this is 19px for border radius
-        sm: '0.75rem', //this is 12px
-        
+        sm: "0.75rem", //this is 12px
       },
       colors: {
         purple: "#5602E0", //this is Purple
@@ -99,10 +104,10 @@ module.exports = {
         "4xl": "50.375rem", // 806px
         "3xl": "47.3125rem", // 757px
       },
-      minWidth:{
-        'sm': "18.875rem", //302px
-        'md':"28rem", //448px
-        'lg':"29.8125rem"  //477px
+      minWidth: {
+        sm: "18.875rem", //302px
+        md: "28rem", //448px
+        lg: "29.8125rem", //477px
       },
       width: {
         64.37: "16.0938rem", //257.5px,
@@ -114,24 +119,23 @@ module.exports = {
         "3xl": "1.75rem", // this is the size of 28px
       },
       dropShadow: {
-        "sm": "1px 1px 14px rgba(0, 0, 0, 0.1)",
-        "md": "1px 2px 5px rgba(0, 0, 0, 0.25)"
+        sm: "1px 1px 14px rgba(0, 0, 0, 0.1)",
+        md: "1px 2px 5px rgba(0, 0, 0, 0.25)",
       },
       keyframes: {
-        "show": {
-          '0%': { opacity: 0},
-          "100%": {opacity: 1},
+        show: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
         },
-        "unshow": {
-          "0%": {opacity: 1},
-          '100%': { opacity: 0},
-          
-        }
+        unshow: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
       },
       animation: {
-        'show': "show 300ms ease-out both",
-        'unshow': "unshow 300ms ease-out both"
-      }
+        show: "show 300ms ease-out both",
+        unshow: "unshow 300ms ease-out both",
+      },
     },
   },
   plugins: [],
