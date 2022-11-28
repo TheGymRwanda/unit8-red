@@ -3,6 +3,7 @@ import ProjectTitle from "../../ui/ProjectTitle";
 import Wrapper from "../../layout/Wrapper";
 import ProjectCard from "../../ui/ProjectCard";
 import data from "../../../data/projectCard";
+import Link from "next/link";
 
 export default function Projects() {
   const [show, setShow] = useState();
@@ -23,10 +24,32 @@ export default function Projects() {
       show={show}
     />
   ));
+  const mobileCards = data.map((el) => (
+    <>
+      <ProjectTitle
+        handle={handleHover(el.id)}
+        remove={handleMouseOut}
+        show={show}
+        mobile
+      >
+        {el.name}
+      </ProjectTitle>
+      <Link href={el.link}>
+        <ProjectCard
+          src={el.src}
+          key={el.id}
+          text={el.text}
+          id={el.id}
+          show={show}
+        />
+      </Link>
+    </>
+  ));
   return (
     <Wrapper>
       <h3 className="mb-2.75 pl-1">Projects</h3>
-      <div className="flex justify-between">
+      {/* deskop version */}
+      <div className="xl:flex hidden justify-between">
         <div className="flex flex-col gap-2 items-start">
           <ProjectTitle
             handle={handleHover(1)}
@@ -36,6 +59,7 @@ export default function Projects() {
           >
             Dacade
           </ProjectTitle>
+
           <ProjectTitle
             handle={handleHover(2)}
             remove={handleMouseOut}
@@ -80,6 +104,12 @@ export default function Projects() {
           </ProjectTitle>
         </div>
         <div className="min-w-[811px] relative">{cards}</div>
+      </div>
+      {/* tablet, ipad and mobile version */}
+      <div className="flex xl:hidden justify-between">
+        <div className="flex flex-col gap-2 items-start w-full">
+          {mobileCards}
+        </div>
       </div>
     </Wrapper>
   );
