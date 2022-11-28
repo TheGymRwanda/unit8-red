@@ -17,6 +17,7 @@ module.exports = {
       spacing: {
         0.6: "0.1875rem", // this is 3px
         2.75: "0.6875rem", // 11px
+        3: "0.75rem", // 12px
         3.5: "0.875rem", // 14px
         111: "27.75rem", // 444px
         17.76: "4.4425rem", //71.08px
@@ -32,6 +33,7 @@ module.exports = {
         5.3: "1.3256rem", //21.21px
         4.48: "1.1213rem", //17.94px
         8.25: "2.0625rem", // 33px
+        9.5: "2.375rem", //38px
         16.69: "4.1744rem", //66px
         26: "6.5rem", //104px
         34: "8.5rem", //136px
@@ -47,12 +49,18 @@ module.exports = {
         16.25: "4.0625rem", //65px
         78: "19.5rem", //312px
         76.5: "19.125rem", //306px
+        2.16: "0.5406rem", // 8.65px
+        4.25: "1.0625rem", // 17px
+        27.79: "6.9481rem", // 111.17px
+        75.5: "18.875rem", //302px
+        112: "28rem", //448px
+        119.25: "29.8125rem", //477px
+        4.75: "1.1875rem", //19px
+        5.5: "1.375rem", //22px
+        14.21: "3.5537rem", //56.86px
         47.75: "11.9375rem", // 191px
         104.25: "26.0625rem", // 417px
         130.245: "32.5613rem", // 520.98px
-        4.75:"1.1875rem",  //19px
-        5.5:"1.375rem" ,    //22px
-        14.21:"3.5537rem", //56.86px
       },
       minHeight: {
         103.5: "25.875rem", // 414px
@@ -61,10 +69,12 @@ module.exports = {
         111: "27.75rem", // 444px
       },
       borderWidth: {
-        1.5: "0.0938rem", //1.5px
+        1.5: "0.0938rem", //0.0938rem
+        0.25: "0.0625rem", //1px
       },
       borderRadius: {
         md: "1.1875rem", // this is 19px for border radius
+        sm: "0.75rem", //this is 12px
       },
       colors: {
         purple: "#5602E0", //this is Purple
@@ -74,6 +84,7 @@ module.exports = {
           100: "#878787", //this is  grey for the tags
           200: "#F4F4F4", // this is tag background color
           300: "#E2E2E2", // this is color of border
+          400: "#EDEDED", //this is color of blog card border
         },
       },
       lineHeight: {
@@ -96,6 +107,11 @@ module.exports = {
         "4xl": "50.375rem", // 806px
         "3xl": "47.3125rem", // 757px
       },
+      minWidth: {
+        sm: "18.875rem", //302px
+        md: "28rem", //448px
+        lg: "29.8125rem", //477px
+      },
       width: {
         64.37: "16.0938rem", //257.5px,
         151.25: "37.8125rem", //605px
@@ -107,6 +123,7 @@ module.exports = {
       },
       dropShadow: {
         sm: "1px 1px 14px rgba(0, 0, 0, 0.1)",
+        md: "1px 2px 5px rgba(0, 0, 0, 0.25)",
       },
       keyframes: {
         show: {
