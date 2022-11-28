@@ -8,9 +8,6 @@ export default function About() {
   function activeStyle(key) {
     return tabValue === key + 1 ? "text-purple" : "cursor-pointer";
   }
-  // function activeStyleMobile(key){
-  //  return tabValue === key + 1 ? "text-purple" : "cursor-pointer";
-  // }
   // this function used to set undeline line on all tabs
   function undelineStyle() {
     let defaultStyle =
