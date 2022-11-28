@@ -17,7 +17,6 @@ export default function Blog() {
         </div>
         <div className="flex gap-5 md:gap-6">
           {data.map(el => <BlogCard key={el.id} date={el.date} title={el.title} subtitle={el.subtitle} tags={el.tag} />)}
-
         </div>
       </Wrapper>
     </section>
