@@ -4,6 +4,7 @@ import Expertise from "../components/sections/homepage/Expertise";
 import Footer from "../components/layout/Footer";
 import Hero from "../components/sections/homepage/Hero";
 import Blog from "../components/sections/homepage/Blog";
+import Gallery from "../components/sections/homepage/Gallery";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Projects />
       <Expertise />
       <About />
+      <Gallery />
       <Blog />
       <Footer />
     </main>
