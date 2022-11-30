@@ -1,12 +1,13 @@
 import { useRef, useState } from "react";
 import Wrapper from "../../layout/Wrapper";
+import Image from "next/image";
 
 export default function Gallery() {
   let [prev, setPrev] = useState(null);
   let [url, setUrl] = useState(0);
   let [zIndex, setZIndex] = useState(0);
   let container = useRef()
-  const imgArr = ["/assets/images/gallery-1.webp","/assets/images/gallery-2.webp","/assets/images/gallery-3.webp"]
+  const imgArr = ["/assets/images/gallery-1.webp","/assets/images/gallery-2.webp","/assets/images/gallery-3.webp",]
   function handleEvent(event) {
     const info = container.current.getBoundingClientRect();
     const firstY = event.clientY - info.top;
@@ -14,7 +15,7 @@ export default function Gallery() {
 
     if (!prev) {
       const img = document.createElement("img");
-
+      container.current.appendChild(img);
       img.src = imgArr[url];
       if (url === imgArr.length - 1) {
         setUrl(0)
@@ -23,12 +24,13 @@ export default function Gallery() {
       }
       img.className = "gallery-img"
       setPrev([firstX, firstY]);
-      img.style.top = firstY + "px";
-      img.style.left = firstX + "px";
+      
+      img.style.top = (firstY - (img.clientHeight /2)) + "px";
+      img.style.left = (firstX - (img.clientWidth /2)) + "px";
       img.alt=zIndex
       img.style.zIndex = zIndex;
       console.log(event.clientY - info.top, event.clientX - info.left);
-      container.current.appendChild(img);
+      
     } else {
       if (Math.abs(firstX - prev[0]) > 62 || Math.abs(firstY - prev[1]) > 62) {
         let img = document.createElement("img");
@@ -40,13 +42,23 @@ export default function Gallery() {
             setUrl(url + 1)
           }
         console.log("all time", firstX - prev[0], firstY - prev[1]);
-        img.style.top = firstY + "px";
-        img.style.left = firstX + "px";
+        container.current.appendChild(img);
+        img.style.top = (firstY - (img.clientHeight /2)) + "px";
+        img.style.left = (firstX - (img.clientWidth /2)) + "px";
         img.alt=zIndex
         setZIndex(zIndex + 1);
         img.style.zIndex = zIndex;
         console.log(event.clientY - info.top, event.clientX - info.left);
-        container.current.appendChild(img);
+        const prevW = img.previousElementSibling.clientWidth;
+        const prevH = img.previousElementSibling.clientHeight;
+        const div = document.createElement("div");
+        img.previousElementSibling.replaceWith(div);
+        div.className = "gallery-img"
+        div.style.backgroundColor = "#E4E4E4"
+        div.style.height = prevH + "px";
+        div.style.width = prevW + "px";
+        div.style.top = (prev[1]-(prevH/2))  + "px"
+        div.style.left = (prev[0]-(prevW/2)) + "px"
         setPrev([firstX, firstY]);
       }
     }
@@ -60,6 +72,9 @@ export default function Gallery() {
       >
         <p>Tap anywhere to see more of us</p>
       </div>
+      <Image src="/assets/images/gallery-1.webp" className="hidden" alt="" fill />
+      <Image src="/assets/images/gallery-2.webp" className="hidden" alt="" fill />
+      <Image src="/assets/images/gallery-3.webp" className="hidden" alt="" fill />
     </Wrapper>
   );
 }
