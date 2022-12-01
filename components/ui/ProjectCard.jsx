@@ -3,7 +3,7 @@ export default function ProjectCard({ src, text, id, show }) {
   return (
     <div
       className={`xl:absolute w-full duration-300 ease-out  transition-all ${
-        id === show ? "opacity-100 pt-3.5 h-auto" : "opacity-0 xl:pt-3.5 h-0"
+        id === show ? "opacity-100 pt-3.5 h-auto" : "w-0 xl:w-full opacity-0 xl:pt-3.5 h-0 overflow-hidden"
       }`}
     >
       <div className="relative w-full xl:h-111 drop-shadow-sm rounded-xl">
