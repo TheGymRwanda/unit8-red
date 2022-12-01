@@ -106,6 +106,7 @@ module.exports = {
         "8xl": "82rem", //1312px
         "4xl": "50.375rem", // 806px
         "3xl": "47.3125rem", // 757px
+        112: "28rem", //448px
       },
       minWidth: {
         sm: "18.875rem", //302px
