@@ -9,10 +9,10 @@ export default function Footer() {
           Waldemarstraße 38,
           <br /> 10999 Berlin
         </p>
-        <div className="flex flex-col gap-4 pt-12 md:pt-0">
-          <Anchor href="https://twitter.com/apeunit">Twitter</Anchor>
-          <Anchor href="https://www.facebook.com/apeunit/">Facebook</Anchor>
-          <Anchor href="https://de.linkedin.com/company/ape-unit">
+        <div className="flex flex-col gap-4 pt-12 md:pt-0 ">
+          <Anchor href="https://twitter.com/apeunit" style='after:hidden'>Twitter</Anchor>
+          <Anchor href="https://www.facebook.com/apeunit/" style='after:hidden'>Facebook</Anchor>
+          <Anchor href="https://de.linkedin.com/company/ape-unit" style='after:hidden'>
             Linkedln
           </Anchor>
         </div>
