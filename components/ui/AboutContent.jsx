@@ -51,7 +51,12 @@ export default function AboutContent({
             </p>
           )}
 
-          <p className="pt-5.5">{paragraphy2}</p>
+          <p className="pt-5.5">
+            {paragraphy2}{" "}
+            <Anchor href="https://medium.com/@moritzfelipe/blockchain-the-internet-for-cooperation-37a606bb3c0">
+               more
+            </Anchor>
+          </p>
         </div>
       </div>
     </div>
