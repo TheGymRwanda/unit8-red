@@ -10,28 +10,28 @@ export default function Hero() {
           <p className="w-max">Ape Unit</p>
         </div>
         <div className="xl:max-w-4xl lg:max-w-3xl ">
-          <p className="sm:hidden ">
+          <p className="md:hidden">
             Unit➇ is a pioneering technology and marketing services company that
-            creates end-to-end digital experiences for brands such as
+            creates end-to-end digital experiences for brands such as 
             <span className="text-purple">
-              Google, Philips, Audi, Twitch, Patagonia, eBay
+            &nbsp;  Google, Philips, Audi, Twitch, Patagonia, eBay &nbsp;
             </span>
-            and more. Its team of 2,500+ digital specialists across 30+
+             and more. Its team of 2,500+ digital specialists across 30+
             locations on 5 continents delivers pioneering work on a global scale
-            with a boutique culture.
+            with a boutique culture.&nbsp;
             <Anchor href="web3@apeunit.com">Contact us</Anchor>
           </p>
-          <p className="hidden sm:block">
+          <p className="hidden md:block">
             Unit➇ is a pioneering technology company specialing in decentralised
             technologies that creates end-to-end digital experiences for
             protocols including
             <span className="text-purple">
-              Ethereum, Tezos, Near, Algorand, Celo
+            &nbsp;  Ethereum, Tezos, Near, Algorand, Celo &nbsp;
             </span>
-            and more. Its team of 2,500+ digital specialists across 30+
+           and more. Its team of 2,500+ digital specialists across 30+
             locations on 5 continents delivers pioneering work on a global scale
-            with a boutique culture.
-            <Anchor href="web3@apeunit.com">Contact us</Anchor>
+            with a boutique culture.&nbsp;
+            <Anchor href="web3@apeunit.com"> Contact us </Anchor>
           </p>
         </div>
       </div>
