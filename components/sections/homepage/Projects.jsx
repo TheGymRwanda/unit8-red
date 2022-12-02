@@ -26,7 +26,7 @@ export default function Projects() {
   ));
   const handleClick = (value) => {
     return function(event) {
-      if (show) return setShow(null);
+      if (show === value) return setShow(null);
       setShow(value)
     }
   }
