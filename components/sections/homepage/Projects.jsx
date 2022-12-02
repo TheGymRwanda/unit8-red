@@ -24,10 +24,16 @@ export default function Projects() {
       show={show}
     />
   ));
+  const handleClick = (value) => {
+    return function(event) {
+      if (show === value) return setShow(null);
+      setShow(value)
+    }
+  }
   const mobileCards = data.map((el) => (
     <>
       <ProjectTitle
-        handle={handleHover(el.id)}
+        handle={handleClick(el.id)}
         remove={handleMouseOut}
         show={show}
         mobile
