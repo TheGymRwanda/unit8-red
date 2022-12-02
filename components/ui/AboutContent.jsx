@@ -12,7 +12,7 @@ export default function AboutContent({
   index,
 }) {
   return (
-    <div classname="relative overflow-hidden">
+    <div className="relative overflow-hidden">
       <div
         onClick={() =>
           tabValue === index + 1 ? setTabValue(null) : setTabValue(index + 1)

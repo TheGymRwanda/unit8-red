@@ -39,7 +39,7 @@ export default function About() {
         </div>
         {data.map((el, index) => {
           return (
-            <div>
+            <div key={index}>
               {tabValue === index + 1 ? (
                 <div className="min-h-103.5">
                   {el.paragraphy1 !== null && (
@@ -66,7 +66,7 @@ export default function About() {
           );
         })}
       </div>
-      <div class="space-y-5.3  block md:hidden ">
+      <div className="space-y-5.3  block md:hidden ">
         {data.map((el, k) => (
           <AboutContent
             key={el.id}
