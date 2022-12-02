@@ -16,4 +16,7 @@
   p {
     @apply text-xl leading-loose tracking-normal md:text-2xl md:leading-relaxed md:tracking-wide;
   }
+  .gallery-img {
+    @apply   object-cover max-h-72 absolute 
+  }
 }
