@@ -25,7 +25,7 @@ const data = [
         name: "UTU.io",
         src: "/assets/images/utu.webp",
         text: "Resources that improve design systems for web3",
-        link: " https://utu.io/"
+        link: "https://utu.io/"
     },
     {
         id: 5,
