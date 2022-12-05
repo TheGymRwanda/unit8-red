@@ -5,7 +5,7 @@ import Anchor from "../../ui/Anchor";
 export default function Hero() {
   return (
     <Wrapper>
-      <div className="flex flex-col gap-y-4.48 md:gap-y-5.3 lg:flex-row justify-between pt-6.75 md:pt-12 pb-8.25 md:pb-16.69 lg:pb-26 xl:pb-34   gap-x-25.25">
+      <div className="flex flex-col gap-y-4.48 md:gap-y-5.3 lg:flex-row justify-between pt-6.75 md:pt-12 pb-8.25 md:pb-16.69 lg:pb-26 xl:pb-34 gap-x-25.25">
         <div>
           <p className="w-max">Ape Unit</p>
         </div>
