@@ -6,11 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {
-        sm: "24.375rem",
-        md: "52.125rem",
-        xl: "90rem",
-      },
       fontFamily: {
         sans: ["Neufile Grotesk"], // called it sans for it to act as default
       },
@@ -61,12 +56,24 @@ module.exports = {
         47.75: "11.9375rem", // 191px
         104.25: "26.0625rem", // 417px
         130.245: "32.5613rem", // 520.98px
+        0.25: "0.0625rem", //1px
+        4.975: "1.2437rem", // 19.9px
+        6.5: "1.625rem", // 26px
+        2.9: "0.725rem", // 11.6px
+        5.1575: "1.2894rem", // 20.63px
+        21.6575: "5.4144rem", // 86.63px
+        15.01: "3.7544rem", // 60.07px
+        15.15: "3.7875rem", // 60.6px
+        25.75:"6.4375rem", //103px
+        22.87:"5.7188rem",//91.5px
+        3.25:"0.8125rem",//13px
       },
       minHeight: {
         103.5: "25.875rem", // 414px
       },
       height: {
         111: "27.75rem", // 444px
+        214.19: "53.5481rem" // 856.77px
       },
       borderWidth: {
         1.5: "0.0938rem", //0.0938rem
