@@ -12,11 +12,11 @@ export default function Hero() {
         <div className="xl:max-w-4xl lg:max-w-3xl ">
           <p className="md:hidden">
             Unit➇ is a pioneering technology and marketing services company that
-            creates end-to-end digital experiences for brands such as 
+            creates end-to-end digital experiences for brands such as
             <span className="text-purple">
-            &nbsp;  Google, Philips, Audi, Twitch, Patagonia, eBay &nbsp;
+              &nbsp; Google, Philips, Audi, Twitch, Patagonia, eBay &nbsp;
             </span>
-             and more. Its team of 2,500+ digital specialists across 30+
+            and more. Its team of 2,500+ digital specialists across 30+
             locations on 5 continents delivers pioneering work on a global scale
             with a boutique culture.&nbsp;
             <Anchor href="web3@apeunit.com">Contact us</Anchor>
@@ -24,11 +24,12 @@ export default function Hero() {
           <p className="hidden md:block">
             Unit➇ is a pioneering technology company specialing in decentralised
             technologies that creates end-to-end digital experiences for
-            protocols including
+            protocols including{" "}
             <span className="text-purple">
-            &nbsp;  Ethereum, Tezos, Near, Algorand, Celo &nbsp;
+              {" "}
+              Ethereum, Tezos, Near, Algorand, Celo{" "}
             </span>
-           and more. Its team of 2,500+ digital specialists across 30+
+            and more. Its team of 2,500+ digital specialists across 30+
             locations on 5 continents delivers pioneering work on a global scale
             with a boutique culture.&nbsp;
             <Anchor href="web3@apeunit.com"> Contact us </Anchor>
