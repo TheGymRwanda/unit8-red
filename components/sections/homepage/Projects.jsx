@@ -55,7 +55,7 @@ export default function Projects() {
     <Wrapper>
       <h3 className="mb-0.25 sm:mb-2.75 lg:mb-5 pl-1">Projects</h3>
       {/* deskop version */}
-      <div className="xl:flex hidden justify-between">
+      <div className="xl:flex hidden justify-between relative">
         <div className="flex flex-col gap-1 md:gap-6.5 items-start">
           <ProjectTitle
             handle={handleHover(1)}
@@ -109,7 +109,7 @@ export default function Projects() {
             Even
           </ProjectTitle>
         </div>
-        <div className="min-w-[811px] relative">{cards}</div>
+        <div className="min-w-[811px]">{cards}</div>
       </div>
       {/* tablet, ipad and mobile version */}
       <div className="flex xl:hidden justify-between">
