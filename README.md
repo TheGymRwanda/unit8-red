@@ -1,5 +1,5 @@
 # Unit8 project - team red
-[![Contributors][contributors-shield]][contributors-url]
+
 
 ## About
 Unit➇ is a pioneering technology and marketing services company that
