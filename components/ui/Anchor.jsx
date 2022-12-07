@@ -13,7 +13,7 @@ export default function Anchor({ href, children, style }) {
         {children}
       </span>
       <Image
-        className="group-hover:translate-x-1 group-hover:-translate-y-1 ease-out transition-transform duration-300"
+        className=" group-hover:translate-x-1 group-hover:-translate-y-1 ease-out transition-transform duration-300"
         alt="arrow"
         width="14"
         height="14"

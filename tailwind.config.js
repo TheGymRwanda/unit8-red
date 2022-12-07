@@ -124,8 +124,8 @@ module.exports = {
         151.25: "37.8125rem", //605px
       },
       fontSize: {
-        "6xl": "3.5rem", // this is the size of 56px
-        "7xl": "4rem", // this is the size of 64px
+        "6xl": "3.25rem", // this is the size of 52px
+        "7xl": "5.375rem", // this is the size of 86px
         "3xl": "1.75rem", // this is the size of 28px
       },
       dropShadow: {
