@@ -7,13 +7,13 @@ export default function Expertise({}) {
         <h3 className="pb-1.75 md:pb-6">Expertise</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6.23 xl:gap-x-6">
           <div className="space-y-2 md:space-y-3">
-            {dataPrimary.map((el) => (
-              <p className="border-b border-grey-300">{el}</p>
+            {dataPrimary.map((element,index) => (
+              <p className="border-b border-grey-300" key={index}>{element}</p>
             ))}
           </div>
           <div className="space-y-2 md:space-y-3 pt-3 md:pt-0">
-            {dataSecondary.map((el) => (
-              <p className="border-b border-grey-300">{el}</p>
+            {dataSecondary.map((element,index) => (
+              <p className="border-b border-grey-300" key={index}>{element}</p>
             ))}
           </div>
         </div>
