@@ -13,11 +13,11 @@ export default function About() {
   // this function used to set undeline line on all tabs
   function undelineStyle() {
     let defaultStyle =
-      "transition-all ease-in-out duration-300 mt-2 absolute h-[1.5px] bg-purple  bottom-0  ";
+      "transition-all ease-in-out duration-300 mt-2 absolute h-0.4 bg-purple  bottom-0  ";
     return tabValue === 1
       ? `w-24 left-0 ${defaultStyle}`
       : tabValue === 2
-      ? `w-32.25 md:left-17.25 xl:left-34 ${defaultStyle} `
+      ? `w-32.25 md:left-17.25 xl:left-34 ${defaultStyle}`
       : `md:w-16 xl:w-16.25 md:left-78 xl:left-76.5 ${defaultStyle}`;
   }
   return (
