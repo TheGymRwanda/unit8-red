@@ -1,21 +1,38 @@
-# unit8-red
+# Unit8 project - team red
+[![Contributors][contributors-shield]][contributors-url]
+
+## About
+Unit➇ is a pioneering technology and marketing services company that
+creates end-to-end digital experiences for brands such as
+Google, Philips, Audi, Twitch, Patagonia, eBay and more. Its team of 2,500+ digital specialists across 30+
+locations on 5 continents delivers pioneering work on a global scale with a boutique culture.
+
 ## Getting Started
+### prerequisite
+- nodejs <br />
+[Node install](https://nodejs.org/en/download/)
 
-First, run the development server:
-
+### Installation
+1. clone the project<br/>
+```bash
+git clone https://github.com/TheGymRwanda/unit8-red.git
+```
+2. install packages
 ```bash
 npm install
-npm run dev
-# or
-yarn dev
 ```
+3. start development server
+```bash
+npm run dev
+```
+4. open the localhost url in the browser, most of the time it run on the following
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-### Packages
+```bash
+http://localhost:3000
+```
+### Packages used
+- reactjs
+- nextjs
+- react-konva
+- swiper
 - tailwindcss
