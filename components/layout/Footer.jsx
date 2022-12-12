@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Anchor from "../ui/Anchor";
 import Wrapper from "./Wrapper";
+import anchors from "../../data/footerAnchor";
+
 export default function Footer() {
   return (
     <Wrapper>
@@ -11,11 +13,9 @@ export default function Footer() {
           <br /> 10999 Berlin
         </p>
         <div className="flex flex-col gap-y-3.25 md:gap-y-0 pt-12 md:pt-0 ">
-          <Anchor href="https://twitter.com/apeunit" style='after:hidden'>Twitter</Anchor>
-          <Anchor href="https://www.facebook.com/apeunit/" style='after:hidden'>Facebook</Anchor>
-          <Anchor href="https://de.linkedin.com/company/ape-unit" style='after:hidden'>
-            Linkedln
-          </Anchor>
+          {anchors.map((anchor, anchorkey) => 
+          <Anchor key={anchorkey} href={anchor.link} style='after:hidden'>{anchor.content}</Anchor>
+          )}
         </div>
        <Link href="https://apeunit.com/impressum.txt"><p className="pt-10 md:pt-0">Impressum / Privacy</p></Link> 
       </footer>
