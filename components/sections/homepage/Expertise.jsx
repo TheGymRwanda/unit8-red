@@ -1,6 +1,6 @@
 import Wrapper from "../../layout/Wrapper";
 import { dataPrimary, dataSecondary } from "../../../data/expertiseList";
-export default function Expertise({}) {
+export default function Expertise() {
   return (
     <Wrapper>
       <div className="mt-21.25 mb-20.25 sm:mt-21.25 sm:mb-33 md:mt-22.87 lg:mt-25.75 md:mb-35.55 xl:mt-31.75 xl:mb-24  w-64.37 md:w-151.25  xl:w-1/2  ml-auto ">
