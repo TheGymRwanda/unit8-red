@@ -58,12 +58,12 @@ export default function Projects() {
       {/* deskop version */}
       <div className="xl:flex hidden justify-between relative">
         <div className="flex flex-col gap-1 md:gap-6.5 items-start">
-          {projectTitles.map((title, titleKey) => (
+          {projectTitles.map((title, index) => (
             <ProjectTitle
-              handle={handleHover(title.index)}
+              handle={handleHover(index + 1)}
               remove={handleMouseOut}
               href={title.link}
-              key={titleKey}
+              key={index}
             >
               {title.name}
             </ProjectTitle>
