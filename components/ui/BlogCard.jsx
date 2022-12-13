@@ -3,8 +3,7 @@ import Tag from "./Tag";
 
 export default function BlogCard({ date, title, subtitle, tags }) {
   return (
-    //min-w-sm md:min-w-md
-    <div className=" max-w-112 xl:min-w-lg  h-full box-border p-5 flex flex-col rounded-sm border-0.25 border-solid border-grey-400 shadow-md gap-9.5 justify-between ">
+    <div className="h-100.47 relative">
       <div className="flex flex-col gap-6">
         <h3>{date}</h3>
         <div className="flex flex-col gap-y-3  items-start">
@@ -12,7 +11,7 @@ export default function BlogCard({ date, title, subtitle, tags }) {
           <p>{subtitle}</p>
         </div>
       </div>
-      <div className="flex flex-wrap gap-x-6 gap-y-2 items-center">
+      <div className="flex absolute bottom-0 flex-wrap gap-x-6 gap-y-2 items-center">
         {tags.map((el) => (
           <Tag key={el.id} fill>
             {el.name}
