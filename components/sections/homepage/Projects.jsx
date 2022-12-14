@@ -32,7 +32,7 @@ export default function Projects() {
     };
   };
   const mobileCards = data.map((el) => (
-    <>
+    <div key={el.id}>
       <ProjectTitle
         handle={handleClick(el.id)}
         remove={handleMouseOut}
@@ -50,7 +50,7 @@ export default function Projects() {
           show={show}
         />
       </Link>
-    </>
+    </div>
   ));
   return (
     <Wrapper>
