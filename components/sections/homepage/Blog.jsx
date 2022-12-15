@@ -1,7 +1,7 @@
 import data from "../../../data/blogCard";
 import BlogCard from "../../ui/BlogCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Mousewheel } from "swiper";
+import SwiperCore, { Mousewheel, Virtual } from "swiper";
 import "swiper/css";
 import { useEffect, useState } from "react";
 import BlogHeader from "../../ui/BlogHeader";
@@ -17,19 +17,13 @@ export default function Blog() {
       window.removeEventListener("resize", setWindowDimensions);
     };
   }, []);
-  SwiperCore.use([Mousewheel]);
+  SwiperCore.use([Mousewheel, Virtual]);
   const nextSlide = () => {
     slide.slideNext();
   };
   const previousSlide = () => {
     slide.slidePrev();
   };
-  useEffect(() => {
-    if (blog.length > 10) {
-      let newArray = blog.slice(0, 5);
-      setBlog(newArray);
-    }
-  }, [blog]);
   return (
     <section className="mt-27.79 mb-31.75 overflow-hidden">
       <div className="m-auto max-w-screen-2xl">
@@ -62,7 +56,9 @@ export default function Blog() {
                 event.realIndex === 0 ? setAtStart(true) : setAtStart(false)
               }
               onSwiper={(slide) => setSlide(slide)}
-              onReachEnd={(event) => setBlog(blog.concat(data))}
+              onReachEnd={(event) => {
+                setBlog(blog.concat(data));
+              }}
               direction={"horizontal"}
               mousewheel={{
                 forceToAxis: true,
