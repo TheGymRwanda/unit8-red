@@ -122,6 +122,7 @@ module.exports = {
       width: {
         64.37: "16.0938rem", //257.5px,
         151.25: "37.8125rem", //605px
+        161.5:"40.375rem",  //646px
       },
       fontSize: {
         "3xl": "1.75rem", // this is the size of 28px
