@@ -119,6 +119,7 @@ export default function Gallery() {
       mobileDimension={mobileDimension}
      />
       <div className="h-0 overflow-hidden">
+      {/* disabled nextjs Image component eslint to use the normal html tag */}
         {imagesUrl.map((url, index) => {
           return (
             <img
