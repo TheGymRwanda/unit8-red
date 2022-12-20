@@ -4,6 +4,10 @@
 @tailwind utilities;
 
 @layer components {
+
+body{
+  @apply selection:bg-purple selection:text-white
+}
   h1 {
     @apply text-6xl leading-tight tracking-wider md:text-7xl md:leading-tighter;
   }

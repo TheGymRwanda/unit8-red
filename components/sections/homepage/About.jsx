@@ -56,9 +56,6 @@ export default function About() {
                     }`}
                   >
                     {element.paragraphy2}
-                    <Anchor href="https://medium.com/@moritzfelipe/blockchain-the-internet-for-cooperation-37a606bb3c0">
-                      more
-                    </Anchor>
                   </p>
                 </div>
               ) : null}
