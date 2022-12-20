@@ -5,9 +5,9 @@ import Footer from "../components/layout/Footer";
 import Hero from "../components/sections/homepage/Hero";
 import Blog from "../components/sections/homepage/Blog";
 import Head from "next/head";
-// import Gallery from "../components/sections/homepage/Gallery";
 import dynamic from "next/dynamic";
 
+// dynamic imprements lazy loading of the gallery component to improve loading perfomance
 const Gallery = dynamic(
   () => import("../components/sections/homepage/Gallery"),
   { ssr: false }

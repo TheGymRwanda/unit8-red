@@ -18,7 +18,7 @@ const data = [
   },
   {
     id: 3,
-    title: "Employment",
+    title: "Hiring",
     paragraphy1: null,
     paragraphy2: "We are always looking for new talent. Find out ",
   },
