@@ -3,6 +3,8 @@ export default function Canvas({
   coordinates,
   dimension,
   handleMouse,
+  getX,
+  getY,
   container,
   mobileContainer,
   mobileDimension,
@@ -19,8 +21,8 @@ export default function Canvas({
                     key={index}
                     image={el.img.current}
                     alt=" "
-                    x={el.x}
-                    y={el.y}
+                    x={getX(el.x, el.w, el.containerWidth)}
+                    y={getX(el.y, el.h, el.containerHeight)}
                     width={el.w}
                     height={el.h}
                   />
@@ -28,8 +30,8 @@ export default function Canvas({
                   <Rect
                     key={index}
                     fill="#E4E4E4"
-                    x={el.x}
-                    y={el.y}
+                    x={getX(el.x, el.w, el.containerWidth)}
+                    y={getX(el.y, el.h, el.containerHeight)}
                     width={el.w}
                     height={el.h}
                   />
