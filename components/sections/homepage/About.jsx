@@ -50,13 +50,20 @@ export default function About() {
                       </Anchor>
                     </p>
                   )}
-                  <p
-                    className={`${
-                      element.paragraphy1 === null ? "" : "md:pt-7.5 lg:pt-7"
-                    }`}
-                  >
-                    {element.paragraphy2}
-                  </p>
+                  {element.paragraphy1 !== null ? (
+                    <p 
+                    className="md:pt-7.5 lg:pt-7"
+                    >
+                     {element.paragraphy2}
+                    </p>
+                  ):(
+                    <p>
+                      {element.paragraphy2}
+                      <Anchor href="https://medium.com/@moritzfelipe/blockchain-the-internet-for-cooperation-37a606bb3c0">
+                        more
+                      </Anchor>
+                    </p>
+                  )}
                 </div>
               ) : null}
             </div>
