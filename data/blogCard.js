@@ -74,5 +74,47 @@ const data = [
       },
     ],
   },
+  {
+    id: 4,
+    date: "02 Oct 2022",
+    title: "What is Ethereum, and Why is it Special?",
+    subtitle:
+      "Ethereum (and web3 more generally) was designed to be a new, better version of the internet.",
+    tag: [
+      {
+        id: 1,
+        name: "Blockchain",
+      },
+      {
+        id: 2,
+        name: "DAOs",
+      },
+      {
+        id: 3,
+        name: "Decentralization",
+      },
+    ],
+  },
+  {
+    id: 5,
+    date: "02 Oct 2022",
+    title: "What is Ethereum, and Why is it Special?",
+    subtitle:
+      "Ethereum (and web3 more generally) was designed to be a new, better version of the internet.",
+    tag: [
+      {
+        id: 1,
+        name: "Blockchain",
+      },
+      {
+        id: 2,
+        name: "DAOs",
+      },
+      {
+        id: 3,
+        name: "Decentralization",
+      },
+    ],
+  },
 ];
 export default data;
