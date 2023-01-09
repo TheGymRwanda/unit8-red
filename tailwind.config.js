@@ -154,6 +154,9 @@ module.exports = {
           "100%": { opacity: 0 },
         },
       },
+      aspectRatio: {
+        project: "360/197"
+      }
     },
   },
   plugins: [],

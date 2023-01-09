@@ -32,7 +32,7 @@ export default function Projects() {
     };
   };
   const mobileCards = data.map((el) => (
-    <div key={el.id}>
+    <div key={el.id} className="w-full">
       <ProjectTitle
         handle={handleClick(el.id)}
         remove={handleMouseOut}
