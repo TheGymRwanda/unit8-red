@@ -8,7 +8,7 @@ export default function ProjectTitle({ href, children, handle, remove, mobile, s
       {!mobile && <Link
         onMouseOver={handle}
         onMouseLeave={remove}
-        className="z-10 hover:after:bg-black flex items-start gap-2 group after:hidden after:xl:block after:transition-colors after:duration-300 after:absolute relative after:bottom-0.6 after:w-full after:h-0.5 after:bg-transparent   "
+        className="z-10 hover:after:bg-black flex items-start gap-2 group after:hidden after:xl:block after:transition-colors after:duration-300 after:absolute relative after:bottom-0.6 after:w-full after:h-0.5 after:bg-transparent"
         href={href}
       >
         <h1>{children}</h1>

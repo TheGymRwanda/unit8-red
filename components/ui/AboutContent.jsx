@@ -17,7 +17,7 @@ export default function AboutContent({
         onClick={() =>
           tabValue === index + 1 ? setTabValue(null) : setTabValue(index + 1)
         }
-        className={`flex items-center justify-between  border-b ${
+        className={`flex items-center justify-between border-b ${
           tabValue === index + 1 ? "border-purple" : "border-black"
         }`}
       >
@@ -29,8 +29,8 @@ export default function AboutContent({
           alt=""
           className={
             tabValue === index + 1
-              ? "stroke-purple invert-[red] -rotate-90 transition-all ease-in-out duration-300 "
-              : "stroke-black rotate-90 transition-all ease-in-out duration-300 "
+              ? "stroke-purple invert-[red] -rotate-90 transition-all ease-in-out duration-300"
+              : "stroke-black rotate-90 transition-all ease-in-out duration-300"
           }
         />
       </div>

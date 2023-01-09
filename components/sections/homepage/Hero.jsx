@@ -9,7 +9,7 @@ export default function Hero() {
         <div>
           <p className="w-max">Ape Unit</p>
         </div>
-        <div className="xl:max-w-4xl lg:max-w-3xl ">
+        <div className="xl:max-w-4xl lg:max-w-3xl">
           <p className="md:hidden">
             Unit➇ is a pioneering technology and marketing services company that
             creates end-to-end digital experiences for brands such as

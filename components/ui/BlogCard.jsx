@@ -6,7 +6,7 @@ export default function BlogCard({ date, title, subtitle, tags }) {
     <div className="h-100.47 relative">
       <div className="flex flex-col gap-6">
         <h3>{date}</h3>
-        <div className="flex flex-col gap-y-3  items-start">
+        <div className="flex flex-col gap-y-3 items-start">
           <h2>{title}</h2>
           <p>{subtitle}</p>
         </div>

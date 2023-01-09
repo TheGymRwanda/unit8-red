@@ -35,7 +35,7 @@ export default function Blog() {
         <div
           className={
             atStart
-              ? "relative  left-5 right-5 md:left-9 md:right-16 2xl:left-26"
+              ? "relative left-5 right-5 md:left-9 md:right-16 2xl:left-26"
               : ""
           }
         >

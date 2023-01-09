@@ -58,7 +58,7 @@ export default function Canvas({
         )}
       </div>
       <div ref={mobileContainer} className="block lg:hidden relative">
-        <div className="absolute flex w-full h-full justify-center items-center "><p className="text-grey">Tap anywhere to see more of us</p></div>
+        <div className="absolute flex w-full h-full justify-center items-center"><p className="text-grey">Tap anywhere to see more of us</p></div>
         {!!mobileDimension && (
           <Stage width={mobileDimension} height={856} onMouseMove={createEventHandler(3)} preventDefault={false}>
           <Layer>

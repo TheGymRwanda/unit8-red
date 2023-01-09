@@ -13,7 +13,7 @@ export default function About() {
   // this function used to set undeline line on all tabs
   function undelineStyle() {
     let defaultStyle =
-      "transition-all ease-in-out duration-300 mt-2 absolute h-0.4 bg-purple  bottom-0  ";
+      "transition-all ease-in-out duration-300 mt-2 absolute h-0.4 bg-purple bottom-0";
     return tabValue === 1
       ? `w-24 left-0 ${defaultStyle}`
       : tabValue === 2
@@ -22,8 +22,8 @@ export default function About() {
   }
   return (
     <Wrapper>
-      <div className=" hidden md:block mb-17.76  xl:max-w-4xl lg:max-w-3xl ml-auto">
-        <div className="flex  md:gap-10.75 lg:gap-10.25 w-fit  mb-5 relative">
+      <div className="hidden md:block mb-17.76 xl:max-w-4xl lg:max-w-3xl ml-auto">
+        <div className="flex md:gap-10.75 lg:gap-10.25 w-fit mb-5 relative">
           {data.map((value, index) => {
             return (
               <h3
@@ -70,7 +70,7 @@ export default function About() {
           );
         })}
       </div>
-      <div className="space-y-5.3  block md:hidden ">
+      <div className="space-y-5.3 block md:hidden">
         {data.map((element, index) => (
           <AboutContent
             key={element.id}
