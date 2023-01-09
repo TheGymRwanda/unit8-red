@@ -1,19 +1,35 @@
-import { Stage, Layer, Image, Rect } from "react-konva";
+import { Stage, Layer, Image, Rect, Text } from "react-konva";
 export default function Canvas({
   coordinates,
   dimension,
-  handleMouse,
-  getX,
-  getY,
+  createEventHandler,
   container,
   mobileContainer,
   mobileDimension,
 }) {
+  const getX = (x, width, container) => {
+    let newValue = x - width / 2;
+    if (newValue < 0) {
+      newValue = 0;
+    } else if (x + width >= container) {
+      newValue = container - width;
+    }
+    return newValue;
+  };
+  const getY = (y, height, container) => {
+    let newValue = y - height / 2;
+    if (y < 0) {
+      newValue = 0;
+    } else if (y + height >= container) {
+      newValue = container - height;
+    }
+    return newValue;
+  };
   return (
     <>
       <div ref={container} className="hidden lg:block">
         {!!dimension && (
-          <Stage width={dimension} height={856} onMouseMove={handleMouse}>
+          <Stage width={dimension} height={856} onMouseMove={createEventHandler(100)}>
             <Layer>
               {coordinates.map((el, index) => {
                 return el.first ? (
@@ -41,29 +57,32 @@ export default function Canvas({
           </Stage>
         )}
       </div>
-      <div ref={mobileContainer} className="block lg:hidden">
+      <div ref={mobileContainer} className="block lg:hidden relative">
+        <div className="absolute flex w-full h-full justify-center items-center "><p className="text-grey">Tap anywhere to see more of us</p></div>
         {!!mobileDimension && (
-          <Stage width={mobileDimension} height={856} onClick={handleMouse}>
-            <Layer>
+          <Stage width={mobileDimension} height={856} onMouseMove={createEventHandler(3)} preventDefault={false}>
+          <Layer>
               {coordinates.map((el, index) => {
                 return el.first ? (
                   <Image
                     key={index}
                     image={el.img.current}
                     alt=" "
-                    x={el.x}
-                    y={el.y}
+                    x={getX(el.x, el.w, el.containerWidth)}
+                    y={getX(el.y, el.h, el.containerHeight)}
                     width={el.w}
                     height={el.h}
+                    preventDefault={false}
                   />
                 ) : (
                   <Rect
                     key={index}
                     fill="#E4E4E4"
-                    x={el.x}
-                    y={el.y}
+                    x={getX(el.x, el.w, el.containerWidth)}
+                    y={getX(el.y, el.h, el.containerHeight)}
                     width={el.w}
                     height={el.h}
+                    preventDefault={false}
                   />
                 );
               })}

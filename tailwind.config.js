@@ -116,6 +116,10 @@ module.exports = {
         112: "28rem", //448px
         "4xl": "50.375rem", // 806px
         "8xl": "82rem", //1312px
+        "60": "15rem", // 240px
+      },
+      maxHeight: {
+        "60": "15rem", // 240px
       },
       minWidth: {
         sm: "18.875rem", //302px
