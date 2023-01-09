@@ -7,7 +7,7 @@ import leftArrowBlue from "/public/assets/icons/blue-left-arrow.svg";
 export default function BlogHeader({ previousSlide, nextSlide, atStart }) {
   return (
     <Wrapper>
-      <div className="flex gap-4.25 mb-5 md:mb-8 ">
+      <div className="flex gap-4.25 mb-5 md:mb-8">
         <h3>Blog</h3>
         <div className="flex gap-2.16">
           <Image
