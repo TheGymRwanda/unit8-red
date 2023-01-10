@@ -27,7 +27,7 @@ export default function Canvas({
   };
   return (
     <>
-      <div ref={container} className="hidden lg:block">
+      <div ref={container} className="hidden lg:block mt-17.76">
         {!!dimension && (
           <Stage width={dimension} height={856} onMouseMove={createEventHandler(100)}>
             <Layer>
@@ -57,8 +57,8 @@ export default function Canvas({
           </Stage>
         )}
       </div>
-      <div ref={mobileContainer} className="block lg:hidden relative">
-        <div className="absolute flex w-full h-full justify-center items-center"><p className="text-grey">Tap anywhere to see more of us</p></div>
+      <div ref={mobileContainer} className="relative block lg:hidden mt-17.76">
+        <div className="absolute flex items-center justify-center w-full h-full"><p className="text-grey">Tap anywhere to see more of us</p></div>
         {!!mobileDimension && (
           <Stage width={mobileDimension} height={856} onMouseMove={createEventHandler(3)} preventDefault={false}>
           <Layer>
