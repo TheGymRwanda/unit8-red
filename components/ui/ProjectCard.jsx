@@ -7,15 +7,15 @@ export default function ProjectCard({ src, text, id, show }) {
       }`}
     >
       <div className="relative w-full xl:h-111 drop-shadow-sm rounded-xl">
-        <Image
-          src={src}
-          priority
-          className="object-cover xl:hidden"
-          width={500}
-          height={500}
-          style={{width: "100%", height: "auto"}}
-          alt=""
-        />
+        <div className="w-full aspect-project relative">
+          <Image
+            src={src}
+            priority
+            className="object-cover xl:hidden"
+            fill
+            alt=""
+          />
+        </div>
         <Image
           src={src}
           priority
