@@ -14,11 +14,19 @@ export default function Gallery() {
   useEffect(() => {
     setDimension(container.current.clientWidth);
     setMobileDimension(mobileContainer.current.clientWidth);
+    const HandleResize = () => {
+      setDimension(container.current.clientWidth);
+      setMobileDimension(mobileContainer.current.clientWidth);
+    }
+    window.addEventListener("resize", HandleResize)
     setImages((refs) =>
       Array(imagesUrl.length)
         .fill()
         .map((_, i) => refs[i] || createRef())
     );
+    return () => {
+      window.removeEventListener('resize', HandleResize)
+    }
   }, []);
 
   const createEventHandler = (distance) => {
