@@ -61,7 +61,6 @@ export default function Projects() {
           {projectTitles.map((title, index) => (
             <ProjectTitle
               handle={handleHover(index + 1)}
-              remove={handleMouseOut}
               href={title.link}
               key={index}
             >
